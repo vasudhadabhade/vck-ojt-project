@@ -2,13 +2,17 @@ import React from 'react'
 
 
 import "./ContactPage.css"
-import Headers from '../Components/HEADER/Headers';
+
+
+
+
+import Header from '../Components/HEADER/Header';
 import Footer from '../Components/Footer/Footers';
 const ContactPage = () => { 
     return(
       <div class="demo">
 
-      <Headers/>
+      <Header/>
   <div style={{ padding: '1rem' }} className="home-scroll-container">
      
     <h1 className='h1'>Contact Us</h1>

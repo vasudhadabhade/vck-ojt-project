@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Headers from "../Header/Headers.css"
+import "./Headers.css"
 
 
-const Headers = () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,6 +15,7 @@ const Headers = () => {
   };
 
   return (
+    <div>
     <header className="header">
       <div className="header-container">
         <h1 className="logo">Vivekanand College</h1>
@@ -41,7 +42,8 @@ const Headers = () => {
         <Link to="/apply" onClick={closeMenu} className="mobile-apply">Apply Now!</Link>
       </div>
     </header>
+    </div>
   );
 };
 
-export default Headers;
+export default Header;

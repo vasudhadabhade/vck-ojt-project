@@ -9,12 +9,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
-import NotFoundPage from './pages/NotFoundPage';
-import HomePage from './Pages/HomePage (1)';
-import AboutPage from './Pages/AboutPage (2)';
-import AdmissionsPage from './Pages/AdmissionsPage (1)';
-import ContactPage from './Pages/ContactPage (2)';
-import CoursesPage from './Pages/CoursesPage (2)';
+
+import HomePage from './Pages/HomePage';
+
+import AdmissionsPage from './Pages/AdmissionsPage';
+import ContactPage from './Pages/ContactPage';
+import CoursesPage from './Pages/CoursesPage';
+import ChatbotComponent from './Components/Chatbot/ChatbotComponent';
+import AboutPage from './Pages/AboutPage';
+import NotFoundPage from './Pages/NotFoundPage';
 //import ChatbotComponent from './components/Chatbot/ChatbotComponents';
 //import DeveloperInfoPopup from './components/Developerlnfo/DeveloperInfoPopup';
 
@@ -46,8 +49,9 @@ function App() {
           <Route path="/apply" element={<AdmissionsPage/>} />
           <Route path="/contact" element={<ContactPage/>} />
            <Route path="/courses" element={<CoursesPage/>} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage/>} />
         </Routes>
+        <ChatbotComponent/>
       </main>
     {/* <ChatbotComponent/>  */}
     </Router>

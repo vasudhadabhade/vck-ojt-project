@@ -1,11 +1,15 @@
 import React from 'react';
-import Header from '../components/Header/Headers';
-import Footer from "../components/Footer/Footers";
 import './AboutPage.css'
+
+import Header from '../Components/HEADER/Header';
+import Footer from '../Components/Footer/Footers';
+
+
+
 const AboutPage = () => {  
     return(
   <div id="abc">
-    <Header/> 
+    <Header/>
   <div style={{ padding: '1rem' }} className="home-scroll-container">
    
     <h1 className='h1'>About Vivekanand College</h1>
@@ -36,4 +40,4 @@ const AboutPage = () => {
 )
 
 }
-export default AboutPage
+export default AboutPage;

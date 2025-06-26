@@ -1,3 +1,8 @@
+body {
+  background-color: rgb(6, 203, 203);
+  color: black;
+  overflow-x: hidden;
+}
 .home-scroll-container {
           
   overflow-y: auto;
@@ -9,7 +14,7 @@
   align-items: center;     /* Center vertically */
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: aqua;
   box-shadow: 0 2px 6px #0000001a;
   margin: 2rem auto;
   font-family: Arial, sans-serif;
@@ -19,6 +24,7 @@
   margin: 2rem auto;
   max-width: 1200px;
   box-sizing: border-box;
+  background-color: aqua;
 }
 
 .flex-row {
@@ -95,7 +101,7 @@ li {
 .banner-container::before {
   content: "";
   position: absolute;
-  background-image: url('/Images/college-banner-.png');
+  background-image: url('/Images/3baf8dfe-84df-4f62-939c-9c37553d91e9.jpg');
   background-size: 1000px 400px;
   background-position: center;
   filter: brightness(80%);                    /* 👈 Slight blur */

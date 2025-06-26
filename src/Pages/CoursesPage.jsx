@@ -1,17 +1,22 @@
 
 
-import Headers from '../Components/HEADER/Headers';
+
+
+
 import Footer from '../Components/Footer/Footers';
+import Header from '../Components/HEADER/Header';
+
+
 const CoursesPage = () => { 
     return(
   <div id="demo">
-    <Headers/>
+    <Header/>
   <div style={{ padding: '1rem' }} className="home-scroll-container">
    
     <h1 className='h1'>Our Academic Programs</h1>
     <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
     <h2 id="dis"><strong>Discover Campus Life</strong></h2>
-    <video  width="840" height="360" controls autoPlay src="/Videos/college-tour.mp4" type="video/mp4"> 
+    <video  width="840" height="360" controls autoPlay src="\videos\college-tour-FAmcnyfF.mp4" type="video/mp4"> 
     </video>
   <div> 
     <label ><i>Get a glimpse of the vibrant academic and social life at Vivekanand College.</i></label>

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import Header from "../components/Header/Headers";
-import Footer from "../components/Footer/Footers";
+
+
 import './HomePage.css'; 
+import Footer from "../Components/Footer/Footers";
+import Header from "../Components/HEADER/Header";
+
+
 
 const HomePage = () => {
   const [showForm, setShowForm] = useState(false);
