@@ -5,7 +5,7 @@ import { SIMILARITY_THRESHOLD } from "../../Utils/constants"; // Path adjusted
 import "./Chatbot.css";
 //import useOnlineStatus from "../../Hooks/useOnlineStatus";
 import useOnlineStatus from "../../Hooks/useOnlineStaus";
-import KNOWLEDGE_BASE_DATA from "../../data/knowledgeBase.json";
+import KNOWLEDGE_BASE_DATA from "../../Data/knowledgeBase.json";
 const ChatbotComponent = () => {
   const [messages, setMessages] = useState([
     { text: KNOWLEDGE_BASE_DATA.greeting.response, sender: "bot" },
