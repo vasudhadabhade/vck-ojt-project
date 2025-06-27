@@ -18,10 +18,15 @@ import CoursesPage from './Pages/CoursesPage';
 import ChatbotComponent from './Components/Chatbot/ChatbotComponent';
 import AboutPage from './Pages/AboutPage';
 import NotFoundPage from './Pages/NotFoundPage';
+import DeveloperInfoPopup from './Components/DeveloperInfo/DeveloperInfoPopup';
 //import ChatbotComponent from './components/Chatbot/ChatbotComponents';
 //import DeveloperInfoPopup from './components/Developerlnfo/DeveloperInfoPopup';
 
 function App() {
+  const [showPopup, setShowPopup] = useState(true);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   // const [showPopup, setShowPopup] = useState(true);
 
   // const handleClosePopup = () => {
@@ -29,6 +34,16 @@ function App() {
   // };
   return (
     <>
+    <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Vasudha Ravindra Dabhade"
+          studentPhotoUrl="\Images\c4f86320-7173-4b8d-9033-a6afea41ef13.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
     <div>
         {/* Your main application content
         <DeveloperInfoPopup
